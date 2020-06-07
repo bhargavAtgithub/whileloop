@@ -10,9 +10,9 @@ const ProfileList = ({ department, profilelist }) => (
     <div className="list">
       {profilelist.map((profile, key) => (
         <Profile
-          source={profile.source}
-          name={profile.name}
-          bio={profile.bio}
+          source={profile[0]}
+          name={profile[1]}
+          bio={profile[2]}
           key={key}
         />
       ))}

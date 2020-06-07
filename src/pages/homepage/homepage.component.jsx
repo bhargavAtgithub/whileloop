@@ -3,6 +3,7 @@ import React from "react";
 import "./homepage.styles.scss";
 
 import Introduction from "../../components/introduction/introduction.component";
+import { CustomButtonAligned } from "../../components/custom-button/custom-button.component";
 
 import {
   CustomButtonFilled,
@@ -21,8 +22,7 @@ const Homepage = () => (
         intelligence, AI and Cloud solutions.
       </span>
       <div className="buttons">
-        <CustomButtonFilled />
-        <CustomButtonBorder />
+        <CustomButtonAligned />
       </div>
     </div>
   </div>

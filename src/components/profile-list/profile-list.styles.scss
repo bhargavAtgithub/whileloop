@@ -1,8 +1,9 @@
-.department {
-  margin: 20px;
-
+.profilelist {
+  margin: 0;
   .list {
-    display: flex;
-    flex-direction: row;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    grid-template-rows: 220px;
   }
 }

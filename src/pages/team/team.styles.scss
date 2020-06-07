@@ -1,6 +1,11 @@
 .team {
   display: flex;
   flex-direction: column;
-  padding: 3%;
+  padding: 2%;
   z-index: 99;
+
+  .departments {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }

@@ -1,7 +1,7 @@
 .App {
   font-family: "Montserrat", sans-serif;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 320px auto;
   height: 100;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .md {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .lg {
@@ -22,7 +22,7 @@
 }
 
 .xl {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .xxl {

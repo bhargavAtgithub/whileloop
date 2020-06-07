@@ -13,3 +13,10 @@ export const CustomButtonBorder = () => (
     <button className="button bold xs">About-us</button>
   </div>
 );
+
+export const CustomButtonAligned = () => (
+  <div className="alignedbuttons">
+    <CustomButtonFilled />
+    <CustomButtonBorder />
+  </div>
+);

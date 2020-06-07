@@ -1,4 +1,5 @@
 .homepage {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,8 +9,7 @@
     margin: 100px 100px 40px 0px;
 
     .buttons {
-      display: flex;
-      flex-direction: row;
+      margin-top: 30px;
     }
   }
 }

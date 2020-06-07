@@ -22,3 +22,8 @@ button {
   width: 200px;
   height: 45px;
 }
+
+.alignedbuttons {
+  display: flex;
+  flex-direction: row;
+}
