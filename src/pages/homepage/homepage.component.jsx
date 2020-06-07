@@ -5,11 +5,6 @@ import "./homepage.styles.scss";
 import Introduction from "../../components/introduction/introduction.component";
 import { CustomButtonAligned } from "../../components/custom-button/custom-button.component";
 
-import {
-  CustomButtonFilled,
-  CustomButtonBorder,
-} from "../../components/custom-button/custom-button.component";
-
 const Homepage = () => (
   <div className="homepage">
     <Introduction
