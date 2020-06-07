@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// import logo from "./logo.svg";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+
+import Navbar from "./components/nav-bar/nav-bar.component";
+import Homepage from "./pages/homepage/homepage.component";
+import WebAndMobile from "./pages/web-and-mobile/web-and-mobile.component";
+
+import { LargeBottomText } from "./components/style-components/style-components.component";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <LargeBottomText />
+
+      <Switch>
+        <Route path="/web-and-mobile" component={WebAndMobile} />
+        <Route path="/" component={Homepage} />
+      </Switch>
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+  flex: 30%;
+  .logo {
+    margin: 10px;
+  }
+}
