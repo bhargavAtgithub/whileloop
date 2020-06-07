@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => (
   <div className="menu">
-    <Link className="link sm regular card2" to="/">
+    <Link className="link sm regular" to="/">
       home
     </Link>
     {/* <span className="sm regular">UI/UX</span> */}
