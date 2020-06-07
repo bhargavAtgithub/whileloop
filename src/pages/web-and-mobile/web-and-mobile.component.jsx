@@ -1,6 +1,12 @@
 import React from "react";
 
 import "./web-and-mobile.styles.scss";
+import { motion } from "framer-motion";
+import {
+  pageTransitions,
+  pageVarients,
+  pageStyle,
+} from "../../pageTransitions";
 
 import Team from "../team/team.component";
 
@@ -48,9 +54,16 @@ const WebAndMobile = () => {
     },
   ];
   return (
-    <div className="webandmobile">
+    <motion.div
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVarients}
+      transition={pageTransitions}
+      style={pageStyle}
+    >
       <Team introduction={introduction} departments={profiles} />
-    </div>
+    </motion.div>
   );
 };
 

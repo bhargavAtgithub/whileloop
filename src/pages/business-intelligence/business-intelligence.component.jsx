@@ -1,8 +1,14 @@
 import React from "react";
 
 import "./business-intelligence.styles.scss";
+import {
+  pageTransitions,
+  pageVarients,
+  pageStyle,
+} from "../../pageTransitions";
 
 import Team from "../team/team.component";
+import { motion } from "framer-motion";
 
 const BusinessIntelligence = () => {
   const introduction = [
@@ -31,9 +37,17 @@ const BusinessIntelligence = () => {
     },
   ];
   return (
-    <div className="businessintelligence">
+    <motion.div
+      className="businessintelligence"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVarients}
+      transition={pageTransitions}
+      style={pageStyle}
+    >
       <Team introduction={introduction} departments={profiles} />
-    </div>
+    </motion.div>
   );
 };
 

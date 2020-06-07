@@ -1,0 +1,13 @@
+.medialist {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  text-align: right;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}

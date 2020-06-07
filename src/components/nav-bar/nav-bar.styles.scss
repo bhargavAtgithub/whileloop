@@ -1,9 +1,18 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  margin: 10px 20px;
+  padding: 10px 20px;
   position: relative;
+  height: 100%;
+
   .logo {
     margin: 10px;
+  }
+
+  .navlinks {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
   }
 }

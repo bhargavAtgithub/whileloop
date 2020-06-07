@@ -1,0 +1,45 @@
+@mixin shrinklabel {
+  top: -14px;
+  font-size: 12px;
+  color: black;
+  opacity: 0.75;
+}
+
+.forminput {
+  display: block;
+  position: relative;
+  .input {
+    background: none;
+    background-color: white;
+    color: black;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    margin: 25px 0;
+    &:focus {
+      outline: none;
+    }
+    &:focus ~ label {
+      @include shrinklabel();
+    }
+    @media screen and (max-width: 800px) {
+      width: 80vw;
+    }
+  }
+  label {
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+    &.shrink {
+      @include shrinklabel();
+    }
+  }
+}

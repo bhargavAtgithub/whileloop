@@ -18,12 +18,19 @@
 }
 
 button {
-  margin: 20px 10px 0px 0px;
   width: 200px;
   height: 45px;
+  transition: all 0.3s ease;
+  justify-content: center;
+}
+
+button:hover {
+  width: 210px;
+  background: #ff7566;
+  // box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, 0.2);
 }
 
 .alignedbuttons {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 225px 225px;
 }

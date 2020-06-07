@@ -4,13 +4,17 @@ import logo from "../../whileloop.png";
 import "./nav-bar.styles.scss";
 
 import Menu from "../menu/menu.component";
+import MediaList from "../../components/media-list/media-list.component";
 
 const Navbar = () => (
   <div className="navbar">
     <div className="logo">
-      <img src={logo} alt="logo" height="100px" />
+      <img src={logo} alt="logo" height="70px" />
     </div>
-    <Menu />
+    <div className="navlinks">
+      <Menu />
+      <MediaList />
+    </div>
   </div>
 );
 

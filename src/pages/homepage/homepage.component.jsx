@@ -1,12 +1,26 @@
 import React from "react";
 
 import "./homepage.styles.scss";
+import { motion } from "framer-motion";
+import {
+  pageTransitions,
+  pageVarients,
+  pageStyle,
+} from "../../pageTransitions";
 
 import Introduction from "../../components/introduction/introduction.component";
 import { CustomButtonAligned } from "../../components/custom-button/custom-button.component";
 
 const Homepage = () => (
-  <div className="homepage">
+  <motion.div
+    className="homepage"
+    initial="initial"
+    animate="in"
+    exit="out"
+    variants={pageVarients}
+    transition={pageTransitions}
+    style={pageStyle}
+  >
     <Introduction
       title={"Hello, World!"}
       tagline={"Let's blend technology into your business to step up the game."}
@@ -20,7 +34,7 @@ const Homepage = () => (
         <CustomButtonAligned />
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default Homepage;
