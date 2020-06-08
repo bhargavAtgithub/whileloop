@@ -10,6 +10,14 @@ const Navbar = () => (
   <div className="navbar">
     <div className="logo">
       <img src={logo} alt="logo" height="70px" />
+      <span className="xs semibold op1">
+        <i>
+          <br />
+          Under development
+          <br />
+          Thanks for stopping by
+        </i>
+      </span>
     </div>
     <div className="navlinks">
       <Menu />

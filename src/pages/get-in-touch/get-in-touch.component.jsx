@@ -28,6 +28,9 @@ class GetInTouch extends React.Component {
           <FormInput handleChange={this.handleChange} label="name" />
           <FormInput handleChange={this.handleChange} label="email" />
           <FormInput handleChange={this.handleChange} label="company" />
+          <span className="xs bold op1">
+            <i>Under development</i>
+          </span>
         </div>
         <div className="message">
           <MessageBox rows="9" label="messagebox" />
