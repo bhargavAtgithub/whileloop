@@ -22,11 +22,13 @@ button {
   height: 45px;
   transition: all 0.3s ease;
   justify-content: center;
+  position: absolute;
 }
 
 button:hover {
   width: 210px;
   background: #ff7566;
+  position: absolute;
   // box-shadow: -1px 6px 10px 0 rgba(120, 60, 20, 0.2);
 }
 

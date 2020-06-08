@@ -12,33 +12,37 @@ import Introduction from "../../components/introduction/introduction.component";
 
 import { CustomButtonAligned } from "../../components/custom-button/custom-button.component";
 
-const About = () => (
-  <motion.div
-    className="about"
-    initial="initial"
-    animate="in"
-    exit="out"
-    variants={pageVarients}
-    transition={pageTransitions}
-    style={pageStyle}
-  >
-    <Introduction title={"WHILELOOP"} tagline={"Reach the infinite."} />
+const About = () => {
+  const names = ["Contact us", "About us"],
+    links = ["/contact-us", "/about-us"];
+  return (
+    <motion.div
+      className="about"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVarients}
+      transition={pageTransitions}
+      style={pageStyle}
+    >
+      <Introduction title={"WHILELOOP"} tagline={"Reach the infinite."} />
 
-    <div className="description">
-      <span>
-        We are bunch of developers, came together to build products that help
-        busineses in increasing profits.
-      </span>
-      <span>
-        Post COVID, many businesses are on the verge of loosing their own game.
-        So, we are here grabing the opportunity to stay with those who needs
-        technology in shaping their business and have a bright future
-      </span>
-      <div className="buttons">
-        <CustomButtonAligned />
+      <div className="description">
+        <span>
+          We are bunch of developers, came together to build products that help
+          busineses in increasing profits.
+        </span>
+        <span>
+          Post COVID, many businesses are on the verge of loosing their own
+          game. So, we are here grabing the opportunity to stay with those who
+          needs technology in shaping their business and have a bright future
+        </span>
+        <div className="buttons">
+          <CustomButtonAligned names={names} links={links} />
+        </div>
       </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
 
 export default About;

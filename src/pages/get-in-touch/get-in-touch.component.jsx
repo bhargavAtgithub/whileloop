@@ -30,9 +30,8 @@ class GetInTouch extends React.Component {
           <FormInput handleChange={this.handleChange} label="company" />
         </div>
         <div className="message">
-          {/* <FormInput handleChange={this.handleChange} label="message" /> */}
           <MessageBox rows="9" label="messagebox" />
-          <CustomButtonFilled />
+          <CustomButtonFilled name={"Send message"} link={""} />
         </div>
       </div>
     );
